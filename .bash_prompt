@@ -101,7 +101,7 @@ else
 	hostStyle="${yellow}";
 fi;
 
-<<<<<<< HEAD
+
 function virtualenv_info(){
     # Get Virtual Env
     if [[ -n "$VIRTUAL_ENV" ]]; then
@@ -116,23 +116,17 @@ function virtualenv_info(){
 
 # Set the terminal title to the current working directory.
 PS1="\[\033]0;\w\007\]";
-=======
+
 # Set the terminal title and prompt.
 PS1="\[\033]0;\W\007\]"; # working directory base name
->>>>>>> pullrequests/mathiasbynens/master
 PS1+="\[${bold}\]\n"; # newline
 PS1+="\[${userStyle}\]\u"; # username
 PS1+="\[${white}\] at ";
 PS1+="\[${hostStyle}\]\h"; # host
 PS1+="\[${white}\] in ";
-<<<<<<< HEAD
-PS1+="\[${green}\]\w"; # working directory
-PS1+="\$(prompt_git \"${white} on ${violet}\")"; # Git repository details
-PS1+="\[${white}\]\$(virtualenv_info)"
-=======
+# PS1+="\[${white}\]\$(virtualenv_info)"
 PS1+="\[${green}\]\w"; # working directory full path
 PS1+="\$(prompt_git \"\[${white}\] on \[${violet}\]\" \"\[${blue}\]\")"; # Git repository details
->>>>>>> pullrequests/mathiasbynens/master
 PS1+="\n";
 PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
 export PS1;
